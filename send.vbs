@@ -13,5 +13,5 @@ oXml.Send
 If oXml.Status = 200 Then
 	'MsgBox "Reply : " & oXml.responseText
 Else
-	MsgBox "Error : " & oXml.responseText
+	'MsgBox "Error : " & oXml.responseText
 End If
