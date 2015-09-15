@@ -6,7 +6,7 @@ rem çÏé“ marshmallow-warriors/ryokun
 set name=%USERNAME%
 set current_dir=%CD%
 set root_dir=%HOMEDRIVE%\marsh
-set script_dir=%root_dir%
+set script_dir=%root_dir%\%name%
 set script_name=send.vbs
 
 
@@ -28,6 +28,7 @@ If NOT EXIST %current_dir%\send.vbs (
 )
 
 If NOT EXIST %root_dir% mkdir %root_dir%
+If NOT EXIST %root_dir%\%name% mkdir %root_dir%\%name%
 
 copy %current_dir%\%script_name% %script_dir%
 

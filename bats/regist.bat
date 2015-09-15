@@ -6,7 +6,7 @@ rem çÏé“ marshmallow-warriors/ryokun
 set name=%USERNAME%
 set current_dir=%CD%
 set root_dir=%HOMEDRIVE%\marsh
-set script_dir=%root_dir%\%name%
+set script_dir=%root_dir%
 set script_name=test.vbs
 
 
@@ -21,14 +21,13 @@ If NOT EXIST %current_dir%\login.xml (
 	pause
 	exit
 )
-If NOT EXIST %current_dir%\send.vbs (
-	echo send.vbsÇ™ë∂ç›ÇµÇ‹ÇπÇÒ
+If NOT EXIST %current_dir%\%script_name% (
+	echo %script_name%Ç™ë∂ç›ÇµÇ‹ÇπÇÒ
 	pause
 	exit
 )
 
 If NOT EXIST %root_dir% mkdir %root_dir%
-If NOT EXIST %root_dir%\%name% mkdir %root_dir%\%name%
 
 copy %current_dir%\%script_name% %script_dir%
 
