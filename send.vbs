@@ -10,8 +10,8 @@ url = URL_HEAD & oNet.UserName
 oXml.Open "GET", url, False
 oXml.Send
 
-If oXml.Status = 200 Then
-	'MsgBox "Reply : " & oXml.responseText
-Else
-	'MsgBox "Error : " & oXml.responseText
-End If
+'If oXml.Status = 200 Then
+'	MsgBox "Reply : " & oXml.responseText
+'Else
+'	MsgBox "Error : " & oXml.responseText
+'End If
