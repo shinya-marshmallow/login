@@ -1,3 +1,5 @@
+On Error Resume Next
+
 Const URL_HEAD = "http://150.89.234.234:8080/LabMemberManager/dwr/jsonp/LmmManager/login/"
 
 Dim oNet, oXml, url
